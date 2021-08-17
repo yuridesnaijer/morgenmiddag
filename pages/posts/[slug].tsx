@@ -1,15 +1,16 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import Container from "../../components/container";
-import PostBody from "../../components/post-body";
 import Header from "../../components/header";
-import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
-import PostTitle from "../../components/post-title";
 import Head from "next/head";
-import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
+import React from "react";
+import PostHeader from "../../components/post/postHeader";
+import DateFormatter from "../../components/date-formatter";
+import PostBody from "../../components/post/postBody";
+import styled from "styled-components";
+import PostTitle from "../../components/post/postTitle";
 
 export default function Post({ post, morePosts }) {
   const router = useRouter();
@@ -22,21 +23,22 @@ export default function Post({ post, morePosts }) {
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
-        <>
-          <article className="mb-32">
-            <Head>
-              <title>{post.title} | Morgenmiddag</title>
-              <meta property="og:image" content={post.ogImage.url} />
-            </Head>
-            <PostHeader
-              title={post.title}
-              coverImage={post.coverImage}
-              date={post.date}
-              author={post.author}
-            />
+        <article>
+          <Head>
+            <title>{post.title} | Morgenmiddag</title>
+            <meta property="og:image" content={post.coverImage} />
+          </Head>
+          <PostHeader
+            title={post.title}
+            coverImage={post.coverImage}
+            date={post.date}
+            author={post.author}
+          />
+          <StyledTextContainer>
+            <DateFormatter dateString={post.date} />
             <PostBody content={post.content} />
-          </article>
-        </>
+          </StyledTextContainer>
+        </article>
       )}
     </Layout>
   );
@@ -78,3 +80,9 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+const StyledTextContainer = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+`;
