@@ -4,7 +4,6 @@ export default function PostTitle({ children }) {
   return <StyledPostTitle>{children}</StyledPostTitle>;
 }
 
-// @ts-ignore
 const StyledPostTitle = styled.h1`
   font-size: 6.25rem;
   line-height: 1;

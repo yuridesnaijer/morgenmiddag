@@ -10,11 +10,9 @@ interface IGridProps {
 const Grid: React.FC<IGridProps> = (props) => {
   const { items } = props;
 
-  console.log("items", items);
-
   return (
     <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-      <Masonry>
+      <Masonry gutter="8">
         {items.map((item) => (
           <Link key={item.slug} as={`/posts/${item.slug}`} href="/posts/[slug]">
             <StyledGridItem href={`/posts/${item.slug}`}>

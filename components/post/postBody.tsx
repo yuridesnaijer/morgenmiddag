@@ -5,17 +5,22 @@ export default function PostBody({ content }) {
 }
 
 const StyledPostBody = styled.div`
-  & > h2 {
+  h2 {
     font-size: 1.875rem;
     line-height: 2.25rem;
     margin-bottom: 1rem;
     margin-top: 3rem;
   }
 
-  & > p {
+  p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  img {
+    width: 50vw;
+    display: inline-block;
   }
 `;

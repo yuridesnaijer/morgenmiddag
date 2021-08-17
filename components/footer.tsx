@@ -7,6 +7,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <StyledSocialLinks>
+        Checkout my
         <a target="_blank" href="http://www.instagram.com/morgenmiddag">
           <StyledFontAwesomeIcon icon={faInstagram} />
         </a>
@@ -27,6 +28,7 @@ const StyledSocialLinks = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 `;
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`

@@ -10,13 +10,5 @@ interface ICoverImageProps {
 export default function CoverImage(props: ICoverImageProps) {
   const { src, title, height, width } = props;
 
-  return (
-    <Image
-      src={src}
-      alt={`Cover Image for ${title}`}
-      layout="responsive"
-      width={width}
-      height={height}
-    />
-  );
+  return <img src={src} alt={`Cover Image for ${title}`} />;
 }
