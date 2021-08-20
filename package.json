@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "next-export": "yarn build && next export -o _static"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
