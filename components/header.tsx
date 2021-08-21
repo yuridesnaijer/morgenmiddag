@@ -1,22 +1,44 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Link from "next/link";
 
-export default function Header() {
+interface IHeaderProps {
+  size?: "small";
+}
+
+const Header: React.FC<IHeaderProps> = (props) => {
   return (
-    <StyledHeader>
+    <StyledHeader {...props}>
       <Link href="/">
-        <a className="hover:underline">Morgenmiddag</a>
+        <StyledHeaderLink>Morgenmiddag</StyledHeaderLink>
       </Link>
       .
     </StyledHeader>
   );
-}
+};
+
+export default Header;
 
 const StyledHeader = styled.h2`
+  font-family: system-ui;
   letter-spacing: -0.04em;
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: ${(props) => (props.size === "small" ? "2rem" : "10vw")};
   line-height: 2.5rem;
   margin-bottom: 5rem;
   margin-top: 2rem;
+
+  ${(props) => css`
+    color: ${props.theme.copy.header.color};
+  `}
+`;
+
+const StyledHeaderLink = styled.a`
+  ${(props) => css`
+    color: ${props.theme.copy.header.color};
+    cursor: pointer;
+  `}
+
+  :hover {
+    text-decoration: underline;
+  }
 `;

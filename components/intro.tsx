@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import Header from "./header";
+import ThemeSwitcher from "./themeSwitcher";
 
 export default function Intro() {
   return (
     <StyledIntro>
-      <StyledTitle>Morgenmiddag.</StyledTitle>
+      <Header />
+      <ThemeSwitcher />
       <StyledSubTitle>Rustig aan, blijven gaan.</StyledSubTitle>
     </StyledIntro>
   );

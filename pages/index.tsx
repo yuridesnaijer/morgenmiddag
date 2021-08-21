@@ -6,8 +6,6 @@ import Head from "next/head";
 import Grid from "../components/grid";
 
 const Index: React.FC<{ allPosts: any }> = ({ allPosts }) => {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
   return (
     <>
       <Layout>

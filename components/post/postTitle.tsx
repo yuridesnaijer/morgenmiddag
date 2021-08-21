@@ -5,7 +5,7 @@ export default function PostTitle({ children }) {
 }
 
 const StyledPostTitle = styled.h1`
-  font-size: 6.25rem;
+  font-size: 10vw;
   line-height: 1;
   letter-spacing: -4px;
   margin-bottom: 3rem;

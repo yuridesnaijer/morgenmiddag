@@ -11,15 +11,19 @@ export default function Footer() {
         <a target="_blank" href="http://www.instagram.com/morgenmiddag">
           <StyledFontAwesomeIcon icon={faInstagram} />
         </a>
-        <StyledFontAwesomeIcon icon={faYoutube} />
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UCFcu34qcfs-Ev-BLrtKWEgg"
+        >
+          <StyledFontAwesomeIcon icon={faYoutube} />
+        </a>
       </StyledSocialLinks>
     </StyledFooter>
   );
 }
 
 const StyledFooter = styled.footer`
-  background-color: rgb(250, 250, 250);
-  border: 1px solid rgb(234, 234, 234);
+  border-top: 1px solid ${(props) => props.theme.global.border.color};
   padding: 1rem;
 `;
 

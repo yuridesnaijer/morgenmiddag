@@ -1,4 +1,4 @@
-import Image from "next/image";
+import styled from "styled-components";
 
 interface ICoverImageProps {
   title: string;
@@ -8,7 +8,11 @@ interface ICoverImageProps {
 }
 
 export default function CoverImage(props: ICoverImageProps) {
-  const { src, title, height, width } = props;
+  const { src, title } = props;
 
-  return <img src={src} alt={`Cover Image for ${title}`} />;
+  return <StyledImage src={src} alt={`Cover Image for ${title}`} />;
 }
+
+const StyledImage = styled.img`
+  width: 100%;
+`;

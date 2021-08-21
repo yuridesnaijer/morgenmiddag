@@ -19,7 +19,7 @@ export default function Post({ post, morePosts }) {
   }
   return (
     <Layout>
-      <Header />
+      <Header size="small" />
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
