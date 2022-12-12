@@ -1,5 +1,3 @@
-import styled from "styled-components";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Link from "next/link";
 import IBlogPost from "../types/IBlogPost";
 import React from "react";
@@ -15,9 +13,7 @@ const Grid: React.FC<IGridProps> = (props) => {
     <>
       {items.map((item) => (
         <Link key={item.slug} as={`/posts/${item.slug}`} href="/posts/[slug]">
-          <StyledGridItem href={`/posts/${item.slug}`}>
-            <img alt={item.title} src={item.coverImage} />
-          </StyledGridItem>
+          <img alt={item.title} src={item.coverImage} />
         </Link>
       ))}
     </>
@@ -25,13 +21,3 @@ const Grid: React.FC<IGridProps> = (props) => {
 };
 
 export default Grid;
-
-const StyledGridItem = styled.a`
-  display: block;
-  cursor: pointer;
-  margin: 0;
-
-  & > img {
-    width: 100%;
-  }
-`;
