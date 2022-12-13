@@ -32,7 +32,7 @@ const StyledHeader = styled.h2`
   `}
 `;
 
-const StyledHeaderLink = styled.a`
+const StyledHeaderLink = styled.span`
   ${(props) => css`
     color: ${props.theme.copy.header.color};
     cursor: pointer;
