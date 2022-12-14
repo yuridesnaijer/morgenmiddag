@@ -12,6 +12,7 @@ const ThemeContext = React.createContext<IThemeContext>({
   theme: DefaultTheme,
 });
 
+//@ts-ignore
 const ThemeContextProvider: React.FC = ({ children }) => {
   const [theme, setTheme] = useState<typeof DefaultTheme>(DefaultTheme);
 
@@ -19,7 +20,6 @@ const ThemeContextProvider: React.FC = ({ children }) => {
     <ThemeContext.Provider
       value={{ theme, setTheme: (theme) => setTheme(theme) }}
     >
-      {" "}
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemeContext.Provider>
   );

@@ -27,12 +27,7 @@ export default function Post({ post, morePosts }) {
             <title>{post.title} | Morgenmiddag</title>
             <meta property="og:image" content={post.coverImage} />
           </Head>
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-          />
+          <PostHeader title={post.title} coverImage={post.coverImage} />
           <StyledTextContainer>
             <DateFormatter dateString={post.date} />
             <PostBody content={post.content} />
