@@ -1,9 +1,9 @@
 import React from "react";
-import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Grid from "../components/grid";
+import Intro from "../components/constructs/intro/intro";
 
 const Index: React.FC<{ allPosts: any }> = ({ allPosts }) => {
   return (
@@ -13,6 +13,7 @@ const Index: React.FC<{ allPosts: any }> = ({ allPosts }) => {
           <title>Morgenmiddag</title>
         </Head>
         <Intro />
+
         <Grid items={allPosts} />
       </Layout>
     </>
@@ -24,9 +25,9 @@ export async function getStaticProps() {
     "title",
     "date",
     "slug",
-    "author",
     "coverImage",
     "excerpt",
+    "tags",
   ]);
 
   return {

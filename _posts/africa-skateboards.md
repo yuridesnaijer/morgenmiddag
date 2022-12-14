@@ -1,8 +1,9 @@
 ---
 title: 'Africa Skateboards'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: ''
 coverImage: '/assets/blog/posts/africaSkateboards/cover.jpg'
 date: '2018-12-10T05:35:07.322Z'
+tags: ['schilderen', 'illustratie']
 ---
 
 I went on a trip to Kenya, got inspired, and painted those skateboards. Acrylics on skateboards.

@@ -23,7 +23,7 @@ export default function Footer() {
 }
 
 const StyledFooter = styled.footer`
-  border-top: 1px solid ${(props) => props.theme.global.border.color};
+  border-top: 1px solid;
   padding: 1rem;
 `;
 

@@ -4,4 +4,5 @@ export default interface IBlogPost {
   excerpt: string;
   slug: string;
   title: string;
+  tags: string[];
 }

@@ -1,8 +1,9 @@
 ---
 title: 'Incentro Skateboards'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: ''
 coverImage: '/assets/blog/posts/incentroSkateboards/cover.jpg'
 date: '2018-11-10T05:35:07.322Z'
+tags: ['schilderen','illustratie']
 ---
 
 Incentro, as the sponsor of the dutch skateboard federation, asked me to design a pair of decorative skateboards. The world of Incentro revolves around Incentronauts and having offices around 5 continents by 2022. I took this ambition as a guideline and made a storytelling quadtriptych that takes them to another planet.

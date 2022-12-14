@@ -1,8 +1,9 @@
 ---
 title: 'Mad Rocket Man'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: ''
 coverImage: '/assets/blog/posts/madRocketMan/FunctieAfbeeldingPlayStore.png'
 date: '2020-02-10T05:35:07.322Z'
+tags: ['code','illustratie']
 ---
 
 This game started as a schoolproject a couple of years ago. After some very elaborate space/planet exploration game we decided to strip all things en just keep the core mechanic that consisted of the planet hopping.

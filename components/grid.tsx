@@ -1,6 +1,7 @@
 import Link from "next/link";
 import IBlogPost from "../types/IBlogPost";
 import React from "react";
+import ProjectCard from "./constructs/projectCard/projectCard";
 
 interface IGridProps {
   items: IBlogPost[];
@@ -12,9 +13,7 @@ const Grid: React.FC<IGridProps> = (props) => {
   return (
     <>
       {items.map((item) => (
-        <Link key={item.slug} as={`/posts/${item.slug}`} href="/posts/[slug]">
-          <img alt={item.title} src={item.coverImage} />
-        </Link>
+        <ProjectCard key={item.slug} project={item} />
       ))}
     </>
   );

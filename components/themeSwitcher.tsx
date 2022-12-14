@@ -37,8 +37,4 @@ const StyledButton = styled.button`
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   height: 1rem;
   cursor: pointer;
-
-  ${(props) => css`
-    color: ${props.theme.buttons.themeSwitcher.color};
-  `}
 `;

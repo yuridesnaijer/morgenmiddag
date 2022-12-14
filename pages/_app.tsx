@@ -1,12 +1,10 @@
 import React from "react";
-import ThemeContextProvider from "../components/themeContext/themeContext";
-import GlobalStyle from "../styles/globalStyle";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <ThemeContextProvider>
-      <GlobalStyle />
+    <ChakraProvider>
       <Component {...pageProps} />;
-    </ThemeContextProvider>
+    </ChakraProvider>
   );
 }

@@ -1,8 +1,9 @@
 ---
-title: 'Balcony Table'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+title: 'Balkontafel.'
+excerpt: 'Handgemaakte balkontafel voor de kat zn plezier'
 coverImage: '/assets/blog/posts/balconyTable/IMG_20190913_173351-1.jpg'
 date: '2020-01-06T05:35:07.322Z'
+tags: ['houtwerk']
 ---
 
 On a balcony you have to work with what you’ve got. So I used some beer crates as a workbench.

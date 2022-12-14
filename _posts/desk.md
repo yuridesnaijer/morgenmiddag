@@ -1,8 +1,9 @@
 ---
 title: 'Douglas Desk'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: 'Een houten bureau op maat gemaakt.'
 coverImage: '/assets/blog/posts/douglasDesk/cover.jpg'
 date: '2018-11-10T05:35:07.322Z'
+tags: ['houtwerk']
 ---
 
 Made of four Douglas 20cm by 300cm planks. Mounted to the walls with with stainless steel shelf supports and wooden beams on the sides.
